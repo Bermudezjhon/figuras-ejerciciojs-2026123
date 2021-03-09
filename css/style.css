@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    width:70% ;
+    margin:0 auto ;
+}
+.container .row{
+    display: flex;
+    margin-top: 100px;
+}
+.container .row .cont-izq{
+    width: 50%;
+    background-image: url(../img/fondo\ m.png);
+    padding: 50px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+.container .row .cont-izq h2{
+    color: #fefeff;
+    background: rgba(252, 252, 1, 0.781);
+    box-shadow: 1px 5px rgba(17, 17, 17, 0.493);
+    border-radius: 10px 10px ;
+
+}
+.container .row .cont-izq .cont-botones button{
+    padding: 15px 12px;
+    margin: 18px;
+    background:  rgba(250, 132, 22, 0.795);
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    border-radius: 10px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 1px 5px rgba(17, 17, 17, 0.493);
+}
+.container .row .cont-der{
+    width: 50%;
+    background-image: url(../img/fondo\ md.jpg);
+    padding: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container .row .cont-der h2{
+    color:rgb(255, 255, 255);
+    background: rgba(252, 172, 1, 0.781);
+    box-shadow: 1px 5px rgba(17, 17, 17, 0.493);
+    border-radius: 10px 10px ;
+}
+
+.container .row .cont-der #figura{
+    width: 200px;
+    height: 200px;
+    margin: 100px  auto;
+    transition: 4ms;
+    background-image: url(../img/bloque.jpg);
+}
+.container .row .cont-der #figura.circulo{
+    transition: 4ms;
+    border-radius: 50%;
+    background-image: url(../img/hongo.jpg);
+}
+.container .row .cont-der #figura.rombo{
+    transition: 4ms;
+    transform: rotate(45deg);
+    border-radius: 0;
+    background-image: url(../img/estrella.jpg);
+}
+.container .row .cont-der #figura.rectangulo{
+    width: 250px;
+    transition: 4ms;
+    height: 125px;
+    background-image: url(../img/recta.jpg);
+}
+
+#body.bg-chameleon{
+    transition: 4ms;
+    background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#body.bg-chameleon2{
+    transition: 4ms;
+    background: #fffc00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#body.bg-chameleon3{
+    transition: 4ms;
+    background: #f7f721;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #757519, #eeee47);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #757519, #fdfd3d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.container .row .cont-der #figura.top{
+    transform: translateY(-50px);
+}
+.container .row .cont-der #figura.right{
+    transform: translateX(50px);
+}
+.container .row .cont-der #figura.left{
+    transform: translateX(-50px);
+}
+.container .row .cont-der #figura.bottom{
+    transform: translateY(50px);
+}
+.container .row .cont-der #figura.diagonal1{
+    transform: translateY(-99px)  translateX(99px);
+}
+.container .row .cont-der #figura.diagonal2{
+    transform: translateY(99px)  translateX(-99px);
+}
